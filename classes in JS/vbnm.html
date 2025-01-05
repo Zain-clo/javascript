@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3rd Grade Science Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        .question {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .answer {
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #result {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Science Quiz for 3rd Graders</h1>
+
+    <div id="quiz">
+        <!-- Question 1 - Matter -->
+        <div class="question">
+            <p>1. What is matter made of?</p>
+            <div class="answer">
+                <input type="radio" name="q1" value="A" id="q1a"> A) Light<br>
+                <input type="radio" name="q1" value="B" id="q1b"> B) Atoms<br>
+                <input type="radio" name="q1" value="C" id="q1c"> C) Sound<br>
+            </div>
+        </div>
+
+        <!-- Question 2 - Light -->
+        <div class="question">
+            <p>2. What is the speed of light?</p>
+            <div class="answer">
+                <input type="radio" name="q2" value="A" id="q2a"> A) 1 meter per second<br>
+                <input type="radio" name="q2" value="B" id="q2b"> B) 300,000 kilometers per second<br>
+                <input type="radio" name="q2" value="C" id="q2c"> C) 50 kilometers per second<br>
+            </div>
+        </div>
+
+        <!-- Question 3 - Changes in Materials -->
+        <div class="question">
+            <p>3. What happens to water when it is heated?</p>
+            <div class="answer">
+                <input type="radio" name="q3" value="A" id="q3a"> A) It freezes<br>
+                <input type="radio" name="q3" value="B" id="q3b"> B) It evaporates<br>
+                <input type="radio" name="q3" value="C" id="q3c"> C) It stays the same<br>
+            </div>
+        </div>
+
+        <!-- Question 4 - Diseases & Health -->
+        <div class="question">
+            <p>4. What is the common way to stop a cold from spreading?</p>
+            <div class="answer">
+                <input type="radio" name="q4" value="A" id="q4a"> A) Wash your hands<br>
+                <input type="radio" name="q4" value="B" id="q4b"> B) Eat candy<br>
+                <input type="radio" name="q4" value="C" id="q4c"> C) Stay in bed all day<br>
+            </div>
+        </div>
+
+        <!-- Question 5 - Matter -->
+        <div class="question">
+            <p>5. What is the state of matter for water at room temperature?</p>
+            <div class="answer">
+                <input type="radio" name="q5" value="A" id="q5a"> A) Solid<br>
+                <input type="radio" name="q5" value="B" id="q5b"> B) Liquid<br>
+                <input type="radio" name="q5" value="C" id="q5c"> C) Gas<br>
+            </div>
+        </div>
+
+        <!-- Question 6 - Light -->
+        <div class="question">
+            <p>6. What is the natural source of light for the Earth?</p>
+            <div class="answer">
+                <input type="radio" name="q6" value="A" id="q6a"> A) The moon<br>
+                <input type="radio" name="q6" value="B" id="q6b"> B) The sun<br>
+                <input type="radio" name="q6" value="C" id="q6c"> C) A lamp<br>
+            </div>
+        </div>
+
+        <!-- Question 7 - Changes in Materials -->
+        <div class="question">
+            <p>7. What can happen to ice when it gets warmer?</p>
+            <div class="answer">
+                <input type="radio" name="q7" value="A" id="q7a"> A) It melts<br>
+                <input type="radio" name="q7" value="B" id="q7b"> B) It freezes<br>
+                <input type="radio" name="q7" value="C" id="q7c"> C) It evaporates<br>
+            </div>
+        </div>
+
+        <!-- Question 8 - Diseases & Health -->
+        <div class="question">
+            <p>8. Which of these helps to prevent sickness?</p>
+            <div class="answer">
+                <input type="radio" name="q8" value="A" id="q8a"> A) Drinking water<br>
+                <input type="radio" name="q8" value="B" id="q8b"> B) Smoking<br>
+                <input type="radio" name="q8" value="C" id="q8c"> C) Eating junk food<br>
+            </div>
+        </div>
+
+        <!-- Question 9 - Matter -->
+        <div class="question">
+            <p>9. What is the color of water in its liquid state?</p>
+            <div class="answer">
+                <input type="radio" name="q9" value="A" id="q9a"> A) Clear<br>
+                <input type="radio" name="q9" value="B" id="q9b"> B) Blue<br>
+                <input type="radio" name="q9" value="C" id="q9c"> C) Green<br>
+            </div>
+        </div>
+
+        <!-- Question 10 - Light -->
+        <div class="question">
+            <p>10. What happens when you turn off a light?</p>
+            <div class="answer">
+                <input type="radio" name="q10" value="A" id="q10a"> A) It goes dark<br>
+                <input type="radio" name="q10" value="B" id="q10b"> B) It gets brighter<br>
+                <input type="radio" name="q10" value="C" id="q10c"> C) It stays the same<br>
+            </div>
+        </div>
+
+        <!-- Question 11 - Matter -->
+        <div class="question">
+            <p>11. What is the smallest particle of matter?</p>
+            <div class="answer">
+                <input type="radio" name="q11" value="A" id="q11a"> A) Atom<br>
+                <input type="radio" name="q11" value="B" id="q11b"> B) Cell<br>
+                <input type="radio" name="q11" value="C" id="q11c"> C) Electron<br>
+            </div>
+        </div>
+
+        <!-- Question 12 - Light -->
+        <div class="question">
+            <p>12. Which color of light is the fastest?</p>
+            <div class="answer">
+                <input type="radio" name="q12" value="A" id="q12a"> A) Red<br>
+                <input type="radio" name="q12" value="B" id="q12b"> B) Blue<br>
+                <input type="radio" name="q12" value="C" id="q12c"> C) Green<br>
+            </div>
+        </div>
+
+        <!-- Question 13 - Changes in Materials -->
+        <div class="question">
+            <p>13. What happens to bread when it’s toasted?</p>
+            <div class="answer">
+                <input type="radio" name="q13" value="A" id="q13a"> A) It turns brown<br>
+                <input type="radio" name="q13" value="B" id="q13b"> B) It melts<br>
+                <input type="radio" name="q13" value="C" id="q13c"> C) It shrinks<br>
+            </div>
+        </div>
+
+        <!-- Question 14 - Diseases & Health -->
+        <div class="question">
+            <p>14. What should you do if you have a headache?</p>
+            <div class="answer">
+                <input type="radio" name="q14" value="A" id="q14a"> A) Rest<br>
+                <input type="radio" name="q14" value="B" id="q14b"> B) Play<br>
+                <input type="radio" name="q14" value="C" id="q14c"> C) Eat candy<br>
+            </div>
+        </div>
+
+        <!-- Question 15 - Matter -->
+        <div class="question">
+            <p>15. What happens to ice when it gets warmer?</p>
+            <div class="answer">
+                <input type="radio" name="q15" value="A" id="q15a"> A) It melts<br>
+                <input type="radio" name="q15" value="B" id="q15b"> B) It freezes<br>
+                <input type="radio" name="q15" value="C" id="q15c"> C) It evaporates<br>
+            </div>
+        </div>
+
+        <!-- Question 16 - Light -->
+        <div class="question">
+            <p>16. What color is the sun’s light?</p>
+            <div class="answer">
+                <input type="radio" name="q16" value="A" id="q16a"> A) Yellow<br>
+                <input type="radio" name="q16" value="B" id="q16b"> B) White<br>
+                <input type="radio" name="q16" value="C" id="q16c"> C) Green<br>
+            </div>
+        </div>
+
+        <!-- Question 17 - Changes in Materials -->
+        <div class="question">
+            <p>17. What happens when you mix oil and water?</p>
+            <div class="answer">
+                <input type="radio" name="q17" value="A" id="q17a"> A) They don’t mix<br>
+                <input type="radio" name="q17" value="B" id="q17b"> B) They combine<br>
+                <input type="radio" name="q17" value="C" id="q17c"> C) They freeze<br>
+            </div>
+        </div>
+
+        <!-- Question 18 - Diseases & Health -->
+        <div class="question">
+            <p>18. How can you avoid getting sick?</p>
+            <div class="answer">
+                <input type="radio" name="q18" value="A" id="q18a"> A) Wash hands<br>
+                <input type="radio" name="q18" value="B" id="q18b"> B) Drink soda<br>
+                <input type="radio" name="q18" value="C" id="q18c"> C) Play outside<br>
+            </div>
+        </div>
+
+        <!-- Question 19 - Matter -->
+        <div class="question">
+            <p>19. Which of these is a liquid?</p>
+            <div class="answer">
+                <input type="radio" name="q19" value="A" id="q19a"> A) Water<br>
+                <input type="radio" name="q19" value="B" id="q19b"> B) Ice<br>
+                <input type="radio" name="q19" value="C" id="q19c"> C) Sand<br>
+            </div>
+        </div>
+
+        <!-- Question 20 - Light -->
+        <div class="question">
+            <p>20. What happens when light hits a mirror?</p>
+            <div class="answer">
+                <input type="radio" name="q20" value="A" id="q20a"> A) Bounces back<br>
+                <input type="radio" name="q20" value="B" id="q20b"> B) Goes through<br>
+                <input type="radio" name="q20" value="C" id="q20c"> C) Disappears<br>
+            </div>
+        </div>
+
+        <!-- Question 21 - Changes in Materials -->
+        <div class="question">
+            <p>21. What happens when you stretch a rubber band?</p>
+            <div class="answer">
+                <input type="radio" name="q21" value="A" id="q21a"> A) It gets longer<br>
+                <input type="radio" name="q21" value="B" id="q21b"> B) It stays the same<br>
+                <input type="radio" name="q21" value="C" id="q21c"> C) It breaks<br>
+            </div>
+        </div>
+
+        <!-- Question 22 - Diseases & Health -->
+        <div class="question">
+            <p>22. What happens if you don’t drink enough water?</p>
+            <div class="answer">
+                <input type="radio" name="q22" value="A" id="q22a"> A) You get dehydrated<br>
+                <input type="radio" name="q22" value="B" id="q22b"> B) You get stronger<br>
+                <input type="radio" name="q22" value="C" id="q22c"> C) You become very tired<br>
+            </div>
+        </div>
+
+        <!-- Question 23 - Matter -->
+        <div class="question">
+            <p>23. What happens to sugar in hot water?</p>
+            <div class="answer">
+                <input type="radio" name="q23" value="A" id="q23a"> A) Dissolves<br>
+                <input type="radio" name="q23" value="B" id="q23b"> B) Freezes<br>
+                <input type="radio" name="q23" value="C" id="q23c"> C) Sinks<br>
+            </div>
+        </div>
+
+        <!-- Question 24 - Light -->
+        <div class="question">
+            <p>24. What happens to light when it passes through water?</p>
+            <div class="answer">
+                <input type="radio" name="q24" value="A" id="q24a"> A) It bends<br>
+                <input type="radio" name="q24" value="B" id="q24b"> B) It disappears<br>
+                <input type="radio" name="q24" value="C" id="q24c"> C) It stops<br>
+            </div>
+        </div>
+
+        <!-- Question 25 - Changes in Materials -->
+        <div class="question">
+            <p>25. What happens when you boil an egg?</p>
+            <div class="answer">
+                <input type="radio" name="q25" value="A" id="q25a"> A) It becomes hard<br>
+                <input type="radio" name="q25" value="B" id="q25b"> B) It turns into liquid<br>
+                <input type="radio" name="q25" value="C" id="q25c"> C) It melts<br>
+            </div>
+        </div>
+
+        <!-- Question 26 - Diseases & Health -->
+        <div class="question">
+            <p>26. What is the flu caused by?</p>
+            <div class="answer">
+                <input type="radio" name="q26" value="A" id="q26a"> A) Viruses<br>
+                <input type="radio" name="q26" value="B" id="q26b"> B) Bacteria<br>
+                <input type="radio" name="q26" value="C" id="q26c"> C) Stress<br>
+            </div>
+        </div>
+
+        <!-- Question 27 - Matter -->
+        <div class="question">
+            <p>27. Which of these is a solid?</p>
+            <div class="answer">
+                <input type="radio" name="q27" value="A" id="q27a"> A) Ice<br>
+                <input type="radio" name="q27" value="B" id="q27b"> B) Water<br>
+                <input type="radio" name="q27" value="C" id="q27c"> C) Air<br>
+            </div>
+        </div>
+
+        <!-- Question 28 - Light -->
+        <div class="question">
+            <p>28. What happens when light passes through a glass?</p>
+            <div class="answer">
+                <input type="radio" name="q28" value="A" id="q28a"> A) It bends<br>
+                <input type="radio" name="q28" value="B" id="q28b"> B) It disappears<br>
+                <input type="radio" name="q28" value="C" id="q28c"> C) It stops<br>
+            </div>
+        </div>
+
+        <!-- Question 29 - Diseases & Health -->
+        <div class="question">
+            <p>29. How can you keep your teeth clean?</p>
+            <div class="answer">
+                <input type="radio" name="q29" value="A" id="q29a"> A) Brush your teeth<br>
+                <input type="radio" name="q29" value="B" id="q29b"> B) Eat candy<br>
+                <input type="radio" name="q29" value="C" id="q29c"> C) Drink soda<br>
+            </div>
+        </div>
+
+        <!-- Question 30 - Changes in Materials -->
+        <div class="question">
+            <p>30. What happens when you heat chocolate?</p>
+            <div class="answer">
+                <input type="radio" name="q30" value="A" id="q30a"> A) It melts<br>
+                <input type="radio" name="q30" value="B" id="q30b"> B) It freezes<br>
+                <input type="radio" name="q30" value="C" id="q30c"> C) It evaporates<br>
+            </div>
+        </div>
+
+        <!-- Question 31 - Diseases & Health -->
+        <div class="question">
+            <p>31. Why is it important to eat fruits and vegetables?</p>
+            <div class="answer">
+                <input type="radio" name="q31" value="A" id="q31a"> A) They help us grow<br>
+                <input type="radio" name="q31" value="B" id="q31b"> B) They make us sleepy<br>
+                <input type="radio" name="q31" value="C" id="q31c"> C) They make us thirsty<br>
+            </div>
+        </div>
+
+        <!-- Question 32 - Light -->
+        <div class="question">
+            <p>32. What happens to light when it passes through a clear plastic?</p>
+            <div class="answer">
+                <input type="radio" name="q32" value="A" id="q32a"> A) It bends<br>
+                <input type="radio" name="q32" value="B" id="q32b"> B) It disappears<br>
+                <input type="radio" name="q32" value="C" id="q32c"> C) It passes through<br>
+            </div>
+        </div>
+
+        <!-- Question 33 - Matter -->
+        <div class="question">
+            <p>33. What happens to water when frozen?</p>
+            <div class="answer">
+                <input type="radio" name="q33" value="A" id="q33a"> A) It turns into ice<br>
+                <input type="radio" name="q33" value="B" id="q33b"> B) It turns into gas<br>
+                <input type="radio" name="q33" value="C" id="q33c"> C) It stays the same<br>
+            </div>
+        </div>
+
+        <!-- Question 34 - Changes in Materials -->
+        <div class="question">
+            <p>34. What happens when you freeze a balloon filled with water?</p>
+            <div class="answer">
+                <input type="radio" name="q34" value="A" id="q34a"> A) It expands<br>
+                <input type="radio" name="q34" value="B" id="q34b"> B) It shrinks<br>
+                <input type="radio" name="q34" value="C" id="q34c"> C) It melts<br>
+            </div>
+        </div>
+
+        <!-- Question 35 - Diseases & Health -->
+        <div class="question">
+            <p>35. How can you stay healthy?</p>
+            <div class="answer">
+                <input type="radio" name="q35" value="A" id="q35a"> A) Eat healthy food<br>
+                <input type="radio" name="q35" value="B" id="q35b"> B) Eat only candy<br>
+                <input type="radio" name="q35" value="C" id="q35c"> C) Stay awake all night<br>
+            </div>
+        </div>
+
+        <!-- Question 36 - Light -->
+        <div class="question">
+            <p>36. How do we see light?</p>
+            <div class="answer">
+                <input type="radio" name="q36" value="A" id="q36a"> A) With our eyes<br>
+                <input type="radio" name="q36" value="B" id="q36b"> B) With our nose<br>
+                <input type="radio" name="q36" value="C" id="q36c"> C) With our ears<br>
+            </div>
+        </div>
+
+        <!-- Question 37 - Diseases & Health -->
+        <div class="question">
+            <p>37. What is a good habit to prevent getting sick?</p>
+            <div class="answer">
+                <input type="radio" name="q37" value="A" id="q37a"> A) Washing hands<br>
+                <input type="radio" name="q37" value="B" id="q37b"> B) Eating candy<br>
+                <input type="radio" name="q37" value="C" id="q37c"> C) Sleeping too much<br>
+            </div>
+        </div>
+
+        <!-- Question 38 - Light -->
+        <div class="question">
+            <p>38. What happens to light when it passes through a prism?</p>
+            <div class="answer">
+                <input type="radio" name="q38" value="A" id="q38a"> A) It bends and spreads out<br>
+                <input type="radio" name="q38" value="B" id="q38b"> B) It disappears<br>
+                <input type="radio" name="q38" value="C" id="q38c"> C) It stops<br>
+            </div>
+        </div>
+
+        <!-- Question 39 - Matter -->
+        <div class="question">
+            <p>39. What happens when you freeze water?</p>
+            <div class="answer">
+                <input type="radio" name="q39" value="A" id="q39a"> A) It turns into ice<br>
+                <input type="radio" name="q39" value="B" id="q39b"> B) It turns into gas<br>
+                <input type="radio" name="q39" value="C" id="q39c"> C) It stays the same<br>
+            </div>
+        </div>
+
+        <!-- Question 40 - Diseases & Health -->
+        <div class="question">
+            <p>40. How do germs spread?</p>
+            <div class="answer">
+                <input type="radio" name="q40" value="A" id="q40a"> A) Through the air<br>
+                <input type="radio" name="q40" value="B" id="q40b"> B) By eating<br>
+                <input type="radio" name="q40" value="C" id="q40c"> C) By talking<br>
+            </div>
+        </div>
+
+        <div id="result"></div>
+        <button onclick="checkAnswers()">Submit Quiz</button>
+    </div>
+
+    <script>
+        function checkAnswers() {
+            let score = 0;
+            let totalQuestions = 40;
+
+            // Loop through all questions and check the answers
+            for (let i = 1; i <= totalQuestions; i++) {
+                let selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+
+                if (selectedOption) {
+                    let correctAnswer = getCorrectAnswer(i);
+                    if (selectedOption.value === correctAnswer) {
+                        score++;
+                    }
+                }
+            }
+
+            // Display the result
+            let resultMessage = `You got ${score} out of ${totalQuestions} correct.`;
+            document.getElementById('result').textContent = resultMessage;
+        }
+
+        function getCorrectAnswer(questionNumber) {
+            const answers = {
+                1: 'B', 2: 'B', 3: 'B', 4: 'A', 5: 'B', 6: 'B', 7: 'A', 8: 'A', 9: 'A', 10: 'A',
+                11: 'A', 12: 'A', 13: 'A', 14: 'A', 15: 'A', 16: 'B', 17: 'A', 18: 'A', 19: 'A', 20: 'A',
+                21: 'A', 22: 'A', 23: 'A', 24: 'A', 25: 'A', 26: 'A', 27: 'A', 28: 'C', 29: 'A', 30: 'A',
+                31: 'A', 32: 'C', 33: 'A', 34: 'A', 35: 'A', 36: 'A', 37: 'A', 38: 'A', 39: 'A', 40: 'A'
+            };
+            return answers[questionNumber];
+        }
+    </script>
+</body>
+</html>

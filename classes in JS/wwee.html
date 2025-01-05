@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pearl Shopping Centre</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .main-content {
+            padding: 20px;
+        }
+        .category-section {
+            margin: 20px 0;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .category-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .category-description {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .exclusive-button {
+            padding: 10px 20px;
+            background-color: #16a085;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .exclusive-content {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to The Pearl Shopping Centre</h1>
+        <p>Your ultimate shopping destination with exclusive experiences!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#categories">Categories</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+
+        <!-- About Section -->
+        <section id="about" class="category-section">
+            <h2 class="category-title">About The Pearl</h2>
+            <p class="category-description">
+                The Pearl is the newest shopping destination offering an exclusive shopping experience
+                like no other. Located at the heart of the city, it provides a luxurious space with premium
+                services, exclusive seating, and unique products in every category of business.
+            </p>
+            <p class="category-description">
+                Whether you're here to shop for the latest fashion trends, enjoy gourmet dining, or just
+                relax in our exclusive lounges, The Pearl has something for everyone.
+            </p>
+        </section>
+
+        <!-- Categories Section -->
+        <section id="categories" class="category-section">
+            <h2 class="category-title">Exclusive Categories</h2>
+            <p class="category-description">Explore the exclusive offerings in each business category:</p>
+
+            <!-- Fashion Category -->
+            <div class="category">
+                <h3>1. Fashion</h3>
+                <p class="category-description">Discover top brands and trendy styles with our exclusive shopping lounges.</p>
+                <button class="exclusive-button" onclick="toggleContent('fashion')">Exclusive Fashion Deals</button>
+                <div id="fashion" class="exclusive-content">
+                    <p>Enjoy private shopping experiences, special discounts, and access to limited-edition fashion items.</p>
+                </div>
+            </div>
+
+            <!-- Food & Dining Category -->
+            <div class="category">
+                <h3>2. Food & Dining</h3>
+                <p class="category-description">Taste the best from our exclusive selection of gourmet restaurants.</p>
+                <button class="exclusive-button" onclick="toggleContent('food')">Exclusive Dining Deals</button>
+                <div id="food" class="exclusive-content">
+                    <p>From international cuisines to local delicacies, experience an exclusive culinary journey at The Pearl.</p>
+                </div>
+            </div>
+
+            <!-- Entertainment Category -->
+            <div class="category">
+                <h3>3. Entertainment</h3>
+                <p class="category-description">Enjoy premium entertainment with VIP seating in our theatres and cinemas.</p>
+                <button class="exclusive-button" onclick="toggleContent('entertainment')">Exclusive Entertainment Deals</button>
+                <div id="entertainment" class="exclusive-content">
+                    <p>Get access to exclusive movie screenings and events, with reserved seats and special offers for our members.</p>
+                </div>
+            </div>
+
+            <!-- Technology Category -->
+            <div class="category">
+                <h3>4. Technology</h3>
+                <p class="category-description">Explore the latest gadgets and tech products with our exclusive demonstrations.</p>
+                <button class="exclusive-button" onclick="toggleContent('technology')">Exclusive Tech Deals</button>
+                <div id="technology" class="exclusive-content">
+                    <p>Enjoy early access to new product launches and exclusive tech events, with hands-on experiences at select stores.</p>
+                </div>
+            </div>
+
+            <!-- Wellness Category -->
+            <div class="category">
+                <h3>5. Wellness</h3>
+                <p class="category-description">Relax and rejuvenate with exclusive wellness services available at The Pearl.</p>
+                <button class="exclusive-button" onclick="toggleContent('wellness')">Exclusive Wellness Deals</button>
+                <div id="wellness" class="exclusive-content">
+                    <p>Enjoy exclusive spa treatments, fitness memberships, and personalized wellness services tailored to your needs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="category-section">
+            <h2 class="category-title">Contact Us</h2>
+            <p class="category-description">
+                Have questions? We'd love to hear from you! Reach out to us through our contact details below.
+            </p>
+            <p>Email: <a href="mailto:info@thepearl.com">info@thepearl.com</a></p>
+            <p>Phone: +1 (800) 123-4567</p>
+        </section>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 The Pearl Shopping Centre. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Interactive Content Toggle -->
+    <script>
+        function toggleContent(category) {
+            const content = document.getElementById(category);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>
